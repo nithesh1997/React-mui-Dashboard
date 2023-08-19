@@ -5,9 +5,9 @@ import { Route, Routes } from "react-router-dom";
 import Dashboard from './scences/dashboard';
 import Sidebar from "./scences/global/Sidebar";
 import { useState } from 'react'
-// import  Team from './scences/team';
-// import  Invoice from './scences/Invoice';
-// import Contacts from "./scences/contacts";
+import Team from './scences/team';
+import Invoices from './scences/invoices';
+import Contacts from "./scences/contacts";
 // import Bar from "./scences/bar";
 // import Form from "./scences/form";
 // import Line from "./scences/line";
@@ -29,9 +29,9 @@ function App() {
             <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              {/* <Route path="/team" element={<Team />} /> */}
-              {/* <Route path="/contacts" element={<Contacts />} /> */}
-              {/* <Route path="/invoice" element={<Invoice />} /> */}
+              <Route path="/team" element={<Team />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/invoices" element={<Invoices />} />
               {/* <Route path="/form" element={<Form />} /> */}
               {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/pie" element={<Pie />} /> */}
